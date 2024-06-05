@@ -2,10 +2,8 @@
 <html lang="pl">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<!--  <meta name="robots" content="none">-->
   <meta name="keywords" content="sans-tech, sans, tech, sklep, komputerowy">
   <link rel="stylesheet" href="figma.css">
   <title>Galeria</title>
@@ -37,39 +35,133 @@
     <a href="#">Akcesoria</a>
   </li>
   <li class="bttm">
-    <li>
-      <a href="contact.html"><img src="img/contact.png" alt="kontakt"></a>
-      <a href="contact.html">Kontakt</a>
-    </li>
-    <li>
-      <a href="gallery.html"><img src="img/gallery.png" alt="galeria"></a>
-      <a href="gallery.html">Galeria</a>
-    </li>
+    <a href="contact.html"><img src="img/contact.png" alt="kontakt"></a>
+    <a href="contact.html">Kontakt</a>
+  </li>
+  <li>
+    <a href="gallery.html"><img src="img/gallery.png" alt="galeria"></a>
+    <a href="gallery.html">Galeria</a>
+  </li>
 </ul>
 <!--IKONY: https://fonts.google.com/icons-->
-<nav class="flex">
-  <img src="img/placeholder.png" alt="logo strony" id="logo">
+<nav>
+  <img src="img/placeholder.png" alt="logo" id="logo">
+  <form class="search">
+    <input type="text" name="search" id="search" placeholder="Co chcesz wyszukać?">
+    <button type="submit"><img src="img/search.png" alt="wyszukaj"></button>
+  </form>
   <div class="icons-container">
-    <div>
+    <a href="#" class="search">
       <img src="img/search.png" alt="szukaj">
       <p>Szukaj</p>
-    </div>
-    <div>
+    </a>
+    <a href="gallery.html" class="gallery">
+      <img src="img/big-image.png" alt="galeria">
+      <p>Galeria</p>
+    </a>
+    <a href="contact.html" class="contact">
+      <img src="img/big-contact.png" alt="kontakt">
+      <p>Kontakt</p>
+    </a>
+    <a href="#">
       <img src="img/cart.png" alt="koszyk">
       <p>Koszyk</p>
-    </div>
-    <div>
+    </a>
+    <a href="#">
       <img src="img/profile.png" alt="profil">
       <p>Profil</p>
-    </div>
-    <div>
+    </a>
+    <a class="burger">
       <img src="img/burger.png" alt="menu" id="burger">
-    </div>
+    </a>
   </div>
 </nav>
+<nav class="pc">
+  <ul>
+    <li>
+      <a href="/"><img src="img/home.png" alt="dom"></a>
+      <a href="/">Strona główna</a>
+    </li>
+    <li>
+      <a href="#"><img src="img/pc.png" alt="pc"></a>
+      <a href="#">Laptopy i Komputery</a>
+    </li>
+    <li>
+      <a href="#"><img src="img/phone-icon.png" alt="telefon"></a>
+      <a href="#">Smartfony</a>
+    </li>
+    <li>
+      <a href="#"><img src="img/pad.png" alt="kontroler"></a>
+      <a href="#">Gaming</a>
+    </li>
+    <li>
+      <a href="#"><img src="img/cpu.png" alt="cpu"></a>
+      <a href="#">Podzespoły</a>
+    </li>
+    <li>
+      <a href="#"><img src="img/acc.png" alt="akcesoria"></a>
+      <a href="#">Akcesoria</a>
+    </li>
+  </ul>
+</nav>
 <main>
-  <div class="black-screen">
-
-  </div>
-  <script src="main.js"></script>
+  <div class="black-screen"></div>
+</main>
+<footer>
+  <section class="contact">
+    <h3>Kontakt</h3>
+    <ul>
+      <li>
+        <img src="img/call.png" alt="zadzwoń">
+        <a href="tel:+48321231233">+48 32 123 12 33</a>
+      </li>
+      <li>
+        <img src="img/mail.png" alt="mail">
+        <a href="mailto:sklep@sanstech.pl">sklep@sanstech.pl</a>
+      </li>
+    </ul>
+  </section>
+  <section class="social-media">
+    <h3>Social Media</h3>
+    <ul>
+      <li>
+        <img src="img/fb.png" alt="fb">
+        <a href="https://www.facebook.com/sanstech.official" target="_blank">Facebook</a>
+      </li>
+      <li>
+        <img src="img/ig.png" alt="ig">
+        <a href="https://www.instagram.com/sanstech.official" target="_blank">Instagram</a>
+      </li>
+      <li>
+        <img src="img/twitter.png" alt="twitter">
+        <a href="https://www.twitter.com/sanstech.official" target="_blank">Twitter</a>
+      </li>
+      <li>
+        <img src="img/yt.png" alt="yt">
+        <a href="https://www.youtube.com/sanstech.official" target="_blank">YouTube</a>
+      </li>
+    </ul>
+  </section>
+  <section class="location">
+    <h3>Gdzie nas znajdziesz?</h3>
+    <ul>
+      <li>
+        <img src="img/pin.png" alt="pinezka">
+        <p>Władysława Jagiełły 5, Pyskowice</p>
+      </li>
+      <li>
+        <img src="img/pin.png" alt="pinezka">
+        <p>Chorzowska 5, Gliwice</p>
+      </li>
+    </ul>
+  </section>
+  <section class="opening-hours">
+    <h3>Godziny Otwarcia</h3>
+    <ul>
+      <li><img src="img/time.png" alt="zegar"><span>pon. - pią.</span>&nbsp;8:00-21:00</li>
+      <li><img src="img/time.png" alt="zegar"><span>sob.</span>&nbsp;8:00-19:00</li>
+    </ul>
+  </section>
+</footer>
+<script src="main.js"></script>
 </body>

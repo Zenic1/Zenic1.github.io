@@ -11,6 +11,7 @@ function toggleMenu() {
         menu.style.left = 0;
         body.style.overflow = 'hidden';
         black.classList.add('menu-open');
+
     } else{
         menu.style.left = '-100%';
         body.style.overflow = 'auto';

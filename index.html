@@ -1,13 +1,12 @@
 <!doctype html>
 <html lang="pl">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<meta name="keywords" content="sans-tech, sans, tech, sklep, komputerowy">
-<link rel="stylesheet" href="figma.css">
-<title>Sans-Tech</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="sans-tech, sans, tech, sklep, komputerowy">
+    <link rel="stylesheet" href="figma.css">
+    <title>Sans-Tech</title>
 </head>
 <body>
 <ul id="menu">
@@ -46,7 +45,7 @@
 </ul>
 <!--IKONY: https://fonts.google.com/icons-->
 <nav>
-    <a href="#"><img src="img/placeholder.png" alt="logo" id="logo"></a>
+<img src="img/placeholder.png" alt="logo" id="logo">
     <form class="search">
         <input type="text" name="search" id="search" placeholder="Co chcesz wyszukać?">
         <button type="submit"><img src="img/search.png" alt="wyszukaj"></button>
@@ -113,7 +112,8 @@
 </header>
 <br>
 <section class="promo">
-    <img src="img/promo.webp" alt="laptop">
+    <img src="img/promo.webp" alt="laptop" id="promo">
+    <img src="img/promo-pc.webp" alt="laptop" id="promo-pc">
     <!--Twórczość Własna-->
     <article class="promo-right">
         <h4>Taniej nawet o 600zł!</h4>
@@ -121,14 +121,23 @@
         <button>Sprawdź To!</button>
     </article>
 </section>
+    <br>
+    <div class="prod-container">
+
 <section class="main-product">
-    <img src="img/tv.webp" alt="tv">
-<!--https://pixabay.com/vectors/television-tv-screen-lcd-screen-2237425/ + https://pixabay.com/photos/mountains-alps-landscape-nature-5333952/-->
-    <h4>Telewizor</h4>
-    <h5>1999,00 zł</h5>
-    <span><span style="text-decoration: line-through;">2599,00 zł</span> - cena regularna</span>
-    <button>Dodaj Do Koszyka!</button>
+    <h3>Promocja Dnia!</h3>
+    <article>
+        <img src="img/tv.webp" alt="tv">
+        <!--https://pixabay.com/vectors/television-tv-screen-lcd-screen-2237425/ + https://pixabay.com/photos/mountains-alps-landscape-nature-5333952/-->
+        <div class="main-background">
+            <h4>Telewizor</h4>
+            <p class="price">1999,00 zł</p>
+            <p><span style="text-decoration: line-through;">2599,00 zł</span> - cena regularna</p>
+            <button>Dodaj Do Koszyka!</button>
+        </div>
+    </article>
 </section>
+        <br>
     <section class="polecamy">
         <h3>Polecamy!</h3>
         <!--https://pixabay.com/vectors/iphone-cell-phone-phone-160307/ + https://pixabay.com/photos/mountains-alps-landscape-nature-5333952/-->
@@ -183,6 +192,7 @@
         </article>
         </div>
     </section>
+    </div>
 </main>
 <footer>
         <section class="contact">
@@ -242,4 +252,5 @@
 </footer>
 <script src="main.js"></script>
 </body>
+<!--dobra dopichcic forma, dodac moze do niego ikonki, zrobic done.html oraz gallery. html-->
 </html>
