@@ -1,4 +1,4 @@
-const menu = document.getElementById('menu');
+const menu = document.getElementsByClassName('menu')[0];
 const menuToggle = document.getElementById('burger');
 const black = document.getElementsByClassName('black-screen')[0]
 const body = document.body
