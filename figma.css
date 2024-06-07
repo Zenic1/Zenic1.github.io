@@ -172,10 +172,14 @@ header>p{
     font-size: 1.7em;
     text-align: center;
 }
-.promo{
+.promo-container{
     flex-wrap: wrap;
     display: flex;
     justify-content: center;
+}
+.promo>h3{
+    font-size: 2em;
+    text-align: center;
 }
 #promo-pc{
     display: none;
@@ -414,6 +418,34 @@ footer .fa-solid, footer .fa-brands{
     font-size: 1em;
     color: #222;
 }
+/*GALERIA*/
+.main-gallery{
+    h3{
+        text-align: center;
+        font-size: 2em;
+    }
+    h4{
+        text-align: center;
+        font-size: 1.7em;
+        color: #4E78DA;
+        width: 300px;
+        margin-left: 10px;
+    }
+}
+
+.gallery-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.gallery-container img{
+    width: 100%;
+    max-width: 300px;
+    margin: 5px 5px 50px;
+    border-radius: 5px;
+    border: 2px solid #222;
+}
+
 /*Media Query na pecety*/
 @media screen and (min-width: 769px) {
     .icons-container>.search, .icons-container>.burger{
@@ -430,6 +462,9 @@ footer .fa-solid, footer .fa-brands{
     }
     .pc{
         display: flex;
+    }
+    .promo>h3{
+        font-size: 3em;
     }
     #promo, .promo-right{
         display: none;
@@ -470,5 +505,11 @@ footer .fa-solid, footer .fa-brands{
     }
     .contact-form{
         max-width: 600px;
+    }
+    .gallery-container img{
+        max-width: 650px;
+    }
+    .main-gallery h4{
+        width: 650px;
     }
 }
