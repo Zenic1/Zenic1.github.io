@@ -10,7 +10,7 @@ body{
 }
 a{
     text-decoration: none;
-    color: #222;
+    color: #F6F9FC;
 }
 a:hover{
     text-decoration: underline;
@@ -42,10 +42,11 @@ button{
 }
 nav{
     height: 82px;
-    background: #4EA4D9;
+    background: #4998C9;
     font-weight: 500;
     display: flex;
     justify-content: space-between;
+
 }
 nav>.search{
     display: none;
@@ -71,7 +72,6 @@ nav>.search>button{
 }
 nav>.search i{
     font-size: 1.5em;
-    color: #222222;
 }
 #search{
     height: 100%;
@@ -90,6 +90,7 @@ nav>.search i{
 .icons-container{
     margin-right: 8px;
     display: flex;
+
 }
 .icons-container li{
     display: flex;
@@ -97,6 +98,7 @@ nav>.search i{
     flex-direction: column;
     justify-content: center;
     margin: 0 10px;
+
 }
 .pc{
     background-color: #f0f0f0;
@@ -108,6 +110,9 @@ nav>.search i{
     justify-content: space-around;
     width: 100%;
     list-style: none;
+}
+.pc a{
+    color: #222;
 }
 .pc i{
     height: 40px;
@@ -138,12 +143,14 @@ nav>.search i{
     margin-bottom: 20px;
     display: flex;
     align-items: center;
+
 }
 .menu a {
     padding: 10px;
     color: #333;
     font-weight: bold;
     font-size: 16px;
+
 
 }
 .menu .fa-solid{
@@ -177,7 +184,7 @@ header>p{
     display: flex;
     justify-content: center;
 }
-.promo>h3{
+.promo>h2{
     font-size: 2em;
     text-align: center;
 }
@@ -287,7 +294,7 @@ header>p{
     font-size: 2em;
 }
 footer{
-    background-color: #4EA4D9;
+    background-color: #4998C9;
     color: #F6F9FC;
     display: flex;
     font-size: 1.2em;
@@ -357,7 +364,7 @@ footer .fa-solid, footer .fa-brands{
     height: 30px;
 }
 .contact-form input:focus{
-    border-bottom-color: #4EA4D9;
+    border-bottom-color: #4998C9;
 }
 .contact-form input:invalid{
     border-bottom-color: crimson;
